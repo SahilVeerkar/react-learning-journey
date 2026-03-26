@@ -1,4 +1,4 @@
-import Counter from "./useStatepractise/1counter"
+import Counter from "./useStatepractise/1Counter"
 import Incdec from "./useStatepractise/2counterupdate"
 import Reset from "./useStatepractise/3resetbuttonadd"
 
