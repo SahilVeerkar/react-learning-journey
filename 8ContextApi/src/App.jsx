@@ -1,11 +1,7 @@
-import { createContext,useContext } from "react"
-const userContext= createContext();
-function Child(){
-  const user = useContext(userContext);
-  return<>
-  <h1>hello {user}</h1>
-  </>
-}
+import userContext from "./store/hello-context";
+
+import Child from "./component/child";
+
 
 
 
