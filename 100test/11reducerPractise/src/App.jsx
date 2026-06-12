@@ -1,10 +1,10 @@
-import { use, useReducer } from "react";
+import { useReducer } from "react";
 const initialState=10;
 function reducer(state,action){
   if(action.type==="add"){
     return state+action.payload;
   }
-  else{
+  if(action.type==="sub"){
     return state-action.payload;
   }
 }
@@ -25,11 +25,21 @@ dispatch({
 
       <button onClick={()=>{
 dispatch({
+  type:"add",
+  payload:100
+})
+      }}
+      >new</button>
+
+
+      <button onClick={()=>{
+dispatch({
   type:"sub",
   payload:5
 })
       }}
       >sub</button>
+      
     </>
   )
 }
