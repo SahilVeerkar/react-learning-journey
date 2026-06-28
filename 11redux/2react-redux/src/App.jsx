@@ -3,7 +3,8 @@ import './App.css'
 import Header from './component/Header'
 import DisplayCounter from './component/DisplayCounter'
 import Container from './component/Container'
-import Controls from './component/controls'
+import Control from './component/Control'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   
@@ -14,7 +15,7 @@ function App() {
     <Container>
       <Header></Header>
      <div className="col-lg-6 mx-auto"> <DisplayCounter></DisplayCounter>  
-     <Controls></Controls>
+     <Control></Control>
       </div>
     </Container>
    
