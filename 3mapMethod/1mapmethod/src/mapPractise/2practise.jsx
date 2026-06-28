@@ -1,6 +1,6 @@
 import React,{ Component } from "react"
 
-class Practise extends Component{
+className Practise extends Component{
 render(){
  const arr = [1, 2, 3, 4];
   return<>

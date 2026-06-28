@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-class Hello extends Component{
+className Hello extends Component{
 render(){
   return (<>
   <h1>sahil</h1>
