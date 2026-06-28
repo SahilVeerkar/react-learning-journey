@@ -23,11 +23,17 @@ type:'ADD',payload:{num: inputElement.current.value}
 
     const handleSub=()=>{
     dispatch({
-type:'SUB'
+type:'SUB',payload:{num: inputElement.current.value}
+   });
+  }
+
+    const handlePrivacyToggle=()=>{
+    dispatch({
+type:'PRIVACY_TOGGLE',
    });
   }
   return<>
-  x
+  
   <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
 
     <button type="button" className="btn btn-primary" onClick={handleIncrement}>+1</button>
@@ -35,6 +41,9 @@ type:'SUB'
     
 
 <button type="button" className="btn btn-success" onClick={handleDecrement}>-1</button>
+
+<button type="button" className="btn btn-warning" onClick={handlePrivacyToggle}>privacyToggle</button>
+
 
 
 </div> 
